@@ -8,7 +8,15 @@ setup(
     url="https://github.com/c3-sravanj/UniEval",
     author="UniEval",
     author_email="UniEval@gmail.com",
-    packages=find_packages(include=["unieval", "metric"], exclude=["tests", "tests.*"]),
+    packages=find_packages(
+        exclude=[
+            "billboard",
+            "evaluation_tasks",
+            "figures",
+            "intermediate_tasks",
+            "reproduce",
+        ]
+    ),
     install_requires=(
         [
             "transformers >= 4.17.0.dev0",
