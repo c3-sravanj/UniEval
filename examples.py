@@ -1,13 +1,13 @@
-from utils import convert_to_json
-from metric.evaluator import get_evaluator
+from unieval.utils import convert_to_json
+from unieval.metric.evaluator import get_evaluator
 
 # Example for data-to-text
-task = 'data2text'
+task = "data2text"
 
 # a list of model outputs to be evaluataed
-output_list = ['You would like to search financial district ?']
+output_list = ["You would like to search financial district ?"]
 # a list of human-annotated reference texts
-ref_list = ['You are looking near the financial district , right ?']
+ref_list = ["You are looking near the financial district , right ?"]
 
 # Prepare data for pre-trained evaluators
 data = convert_to_json(output_list=output_list, ref_list=ref_list)
@@ -17,8 +17,7 @@ evaluator = get_evaluator(task)
 eval_scores = evaluator.evaluate(data, print_result=True)
 
 
-
-'''
+"""
 # Example for summarization
 task = 'summarization'
 
@@ -78,4 +77,4 @@ data = convert_to_json(output_list=output_list, src_list=src_list)
 evaluator = get_evaluator(task)
 # Get factual consistency scores
 eval_scores = evaluator.evaluate(data, print_result=True)
-'''
+"""

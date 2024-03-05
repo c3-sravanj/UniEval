@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: unieval
+Version: 1.0
+Summary: Fork of UniEval.
+Home-page: https://github.com/c3-sravanj/UniEval
+Author: UniEval
+Author-email: UniEval@gmail.com
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+License-File: LICENSE
+Requires-Dist: transformers>=4.17.0.dev0
+Requires-Dist: accelerate
+Requires-Dist: datasets>=1.8.0
+Requires-Dist: sentencepiece!=0.1.92
+Requires-Dist: protobuf
+Requires-Dist: rouge-score
+Requires-Dist: nltk
+Requires-Dist: py7zr
+Requires-Dist: torch>=1.3
+Requires-Dist: evaluate
+Requires-Dist: prettytable
